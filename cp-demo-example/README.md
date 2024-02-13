@@ -93,6 +93,12 @@ confluent iam rbac role-binding list --principal Group:KafkaDevelopers --connect
 confluent iam rbac role-binding list --principal Group:KafkaDevelopers --kafka-cluster $KAFKA_CLUSTER_ID
 ```
 
+## Show the log of the Confluent Operator
+
+```shell
+kubectl -n confluent logs -l "app.kubernetes.io/name=confluent-operator"
+```
+
 ## Shutdown
 
 ```shell
